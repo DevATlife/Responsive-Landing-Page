@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Landing page UI</title>
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    
+<link href="https://fonts.googleapis.com/css?family=Calligraffitti|Sarina" rel="stylesheet"> 
+    
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous"> 
+    
+<link href="weather-underground-icons-master/dist/wu-icons-style.css" rel="stylesheet">    
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ 
+</head>
+<style>
+   
+/*---------------------------*/   
+    html,body{
+        margin: 0;
+        height:100%;
+        background: #4bbbeb;
+        font-family: 'Nunito', sans-serif;  
+    }
+    
+/*---------------------------*/
+    
+    .container1{
+        position: relative;
+        background-image: url('img/rough-horn-2146181_1280.jpg');
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat;
+        color:white;
+        height:100%;
+/*--padding: 50px; --- will cause the section to be bigger than 100% in height ---*/
+        text-align:center;   
+    }    
+    
+    
+  
+    
+    
+      .container2{
+        color:white;
+        height:auto;
+/*--padding: 50px; --- will cause the section to be bigger than 100% in height ---*/
+        text-align:center;   
+    }    
+    
+       .container3{
+         position: relative;
+       background-image: url('img/shoes-1638873_1280.jpg');
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat;
+        color:white;
+        height:100%;
+/*--padding: 50px; --- will cause the section to be bigger than 100% in height ---*/
+        text-align:center;   
+    }    
+    
+    
+    
+    .layer{
+        background: rgba(12, 4, 31, 0.7);
+        height:100%;
+    }
+    
+    
+    .title{
+        position: absolute;
+        top:45%;
+        width:100%;
+        text-align: center;
+    }
+/*---------------------------*/ 
+    
+    
+/*-----------------------------*/
+    #navBar{
+        text-align: center;
+        padding:12px;
+        background: black;
+        color: aliceblue;
+        position: fixed;
+        top:0;
+        width: 100%;
+        z-index: 99;
+    }
+    
+    #navBar a{
+        padding:12px;
+        cursor:pointer;
+    } 
+    
+    .btn{
+        display:inline-block;
+        text-decoration: none;
+        color:aliceblue;
+        background: #4bbb3b;
+        width:250px;
+        padding: 10px;
+        margin:0 auto;
+        border-radius: 5px;
+        transition: all 550ms ease-in-out;
+        cursor:pointer;
+    }
+    
+      .btn:hover{
+        background: #4bbbeb;
+    }
+
+ .btn2{
+        display:inline-block;
+        text-decoration: none;
+        color:aliceblue;
+        background: #ff8533;
+        width:250px;
+        padding: 10px;
+        margin:0 auto;
+        border-radius: 5px;
+        transition: all 550ms ease-in-out;
+        cursor:pointer;
+    }
+    
+      .btn2:hover{
+        background: #4bbbeb;
+    }
+    
+    /*------------------- packages style ---------------------*/ 
+    .package{
+        background: whitesmoke;
+        color: #333333;
+        width:350px;
+        height: auto;
+        border-radius:8px;
+        display: inline-block;
+        box-shadow: 0 0 15px gray;
+        
+    }
+    
+.package ul li{
+    list-style: none;
+}
+
+    .package ul li:before{   
+        content: '\2714';
+        margin-right:10px;
+        
+    }
+    
+    
+    
+@media screen and (min-width:300px) and (max-width:450px){
+      .package{
+       width:100%;
+       margin-bottom: 20px;
+        
+    } 
+    
+       
+    .title{
+      
+        top:28%;
+      
+    }
+    
+    .btn2{
+        margin-top:30px;
+    }
+    
+}    
+
+@media screen and (min-width:760px) and (max-width:1000px){
+ .package{
+        width: 250px;
+       margin-bottom: 20px;
+        
+    }  
+ h1, h2, h3, h4{
+    margin:0;
+    padding:0;
+}
+}
+
+@media screen and (min-width:1010px) and (max-width:1025px){
+ .package{
+        width: 300px;
+       margin-bottom: 20px;
+        
+    }  
+}
+
+    .headline{
+        background: #333333;
+        color:aliceblue;
+        padding:12px;
+        font-size: 20px;
+        border-radius:5px;
+   
+    }
+    
+    .bottom{
+    background: #333333;
+    color:white;
+    padding:12px;
+   font-size: 20px; 
+  border-radius:4px;
+        z-index: 99;
+    }
+    
+    .joinNow{
+        background:transparent;
+        border-top: 2px solid gray;
+        border-bottom: 2px solid gray;
+        color:#333333;
+  padding:12px;
+font-size: 20px;  
+cursor:pointer;
+    }
+    
+    .joinNow:hover{
+        
+        background:#00b300;
+        color:white;
+        border-top:2px solid transparent;
+        border-bottom: 2px solid transparent;
+        -webkit-transition: all 550ms ease-in-out;
+        transition: all 550ms ease-in-out;
+    }
+  
+    
+    .wrapper{
+        text-align:center;
+        padding-top: 100px;
+         padding-bottom: 100px;    
+    }
+    
+  
+
+      .package .fas{
+       border: 1px solid white;
+        border-radius: 360px;
+        font-size: 30px;
+          padding:12px;
+    
+    }
+    
+.fa-map-marker-alt{
+    width:30px;
+    
+    }
+
+    #premium2, #premium3{
+        background: #4bbb3b;
+    }
+/*------------------- End of packages style ---------------------*/ 
+
+    .scroll{
+        position:absolute;
+        top:30%;
+        height:280px;
+        overflow-y:scroll;
+        line-height: 55px;
+        font-size: 21px;
+        padding-left:50px;
+        padding-right:50px;
+        margin-top:50px;
+    } 
+    
+    .wu-128 {
+        width:100px;
+        height:100px;
+    }
+    .weather{
+        display:inline-block;
+        margin:30px;
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    
+@media screen and (min-width:300px) and (max-width:450px){
+    .wu{
+      width:50px;
+      height:50px;    
+    }
+    
+    .weather{
+       margin:10px;
+        font-size: 18px;
+    }
+}    
+
+    .hiking_img{
+        display: inline-block;
+        width:200px;
+        height: 200px;
+        transition:all 550ms ease-in-out;
+        border-radius:2px;
+    }  
+    
+    
+     .hiking_img:hover{
+        transform:scale(1.5);
+    } 
+    
+    @media screen and (min-width:300px) and (max-width:450px){
+    .hiking_img{   
+      width:120px;
+      height: 120px;
+    }  
+    
+h1, h2{
+    margin:0;
+    padding:0;
+}
+</style>
+    
+<body>
+ <nav id="navBar">
+<a>Home</a>    
+<a>About</a> 
+<a>Media</a> 
+<a>Contact</a>     
+</nav>  
+<!--------------------------------------------->    
+<div class="container1">
+<div class="layer">
+<div class="title">
+<h1>Respond to <span style="font-family: 'Calligraffitti', cursive; font-weight: 900; font-size:50px;">every call</span> that excites your <span style="font-family: 'Calligraffitti', cursive; font-weight: 900; font-size:50px;">spirit</span></h1>
+<div style="text-align:center;">
+<div class="btn">Learn More</div> <div class="btn2">Join Us</div> 
+</div>
+</div>
+   
+</div> 
+    
+</div> 
+  
+<!--------------------------------------------->    
+ 
+ 
+    
+    
+    <!--------------------------------------------->    
+<div class="container2" style=" background: linear-gradient(to right, #4bbbeb , aliceblue ); color: #333333;">
+   
+    <div class="wrapper">
+    <h1>Weather Forecast </h1><br>    
+         <div class="weather"><i class="wu wu-solid-black wu-128 wu-sunny"></i><br>Jan</div>
+           <div class="weather"><i class="wu wu-solid-black wu-128 wu-mostlysunny"></i><br>Fab</div>
+           <div class="weather"><i class="wu wu-solid-black wu-128 wu-partlycloudy"></i><br>Mar</div>
+           <div class="weather"><i class="wu wu-solid-black wu-128 wu-chancesnow"></i><br>Apr</div>
+        <br>
+           <div class="weather"><i class="wu wu-solid-black wu-128 wu-chancetstorms"></i><br>May</div>
+            <div class="weather"> <i class="wu wu-solid-black wu-128 wu-clear"></i><br>Jun</div>
+         <div class="weather"><i class="wu wu-solid-black wu-128 wu-cloudy"></i><br>Jul</div> 
+         <div class="weather"><i class="wu wu-solid-black wu-128 wu-flurries"></i><br>Aug</div>
+         <br>
+          <div class="weather"><i class="wu wu-solid-black wu-128 wu-fog"></i><br>Sep</div>
+            <div class="weather"> <i class="wu wu-solid-black wu-128 wu-snow"></i><br>Oct</div>
+         <div class="weather"><i class="wu wu-solid-black wu-128 wu-mostlycloudy"></i><br>Nov</div>
+        <div class="weather"><i class="wu wu-solid-black wu-128 wu-chanceflurries"></i><br>Dec</div>
+        </div>  <!------- Closing tag of the wrapper --------------->
+</div>    
+<!---------------------------------------------> 
+    
+  
+    
+    
+    
+    
+    
+<!--------------------------------------------->    
+<div class="container3">
+<div class="layer">
+<div class="wrapper">   
+<h1>My Hiking Story With The Cat Down of The Road </h1>    
+ <div class="scroll">
+     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+</div>
+</div>     
+</div>    
+</div>    
+<!---------------------------------------------> 
+    
+    
+    
+    
+    
+    
+    
+<!--------------------------------------------->    
+<div class="container2" style=" background: linear-gradient(to right, #4bbbeb , aliceblue ); color: #333333;">
+    <div class="wrapper">
+    <h1>Hiking Packages</h1><br>    
+        <!---------------------------------------------------------------------------------->
+    <div class="package">
+        <div class="headline"><h4>2 Nights</h4>
+        <i class="fas fa-map-signs" ></i></div>
+        <h3>Services</h3>
+        <ul  style=" text-align:left; padding-left:50px; padding-right:50px; padding-top:30px; padding-bottom:30px; border-top:1px solid gray; border-bottom:1px solid gray;">
+            <li>3 stars categories hotel<br> </li>
+            <li>3 meals</li>
+            <li>Family Tours</li>
+            <li>Sightseeing as per itinerary with English speaking guide</li>
+        </ul>
+        <h4>+ Entrance fees, visa and permit</h4>
+        <div class="joinNow"  id="j1">Contact Now</div>
+        <div class="bottom">$500</div>
+        </div>
+          <!---------------------------------------------------------------------------------->
+        
+        <div class="package" id="premium1">
+        <div class="headline" id="premium2"  ><h4> 5 nights</h4>
+        <i class="fas fa-map-marker-alt"></i></div>
+        <h3 id="featID" style="padding:5px;">Services<br></h3>
+        <ul  style=" text-align:left; padding-left:50px; padding-right:50px;; padding-top:30px; padding-bottom:30px; border-top:1px solid gray; border-bottom:1px solid gray;">
+            <li>5 stars categories hotel<br> </li>
+            <li>5 meals + snacks</li>
+            <li>Family Tours</li>
+            <li>Sightseeing as per itinerary with English speaking guide</li>
+        </ul>
+        <h4>+ Secret Places</h4>
+        <div class="joinNow"  id="premium4">Contact Now</div>
+        <div class="bottom"  id="premium3">$2000</div>
+        </div>
+              <!---------------------------------------------------------------------------------->
+              
+     <div class="package">
+         <div class="headline"><h4>3 Nights</h4>
+        <i class="fas fa-map" aria-hidden="true"></i></div>
+        <h3>Services</h3>
+        <ul  style=" text-align:left; padding-left:50px; padding-right:50px; padding-top:30px; padding-bottom:30px; border-top:1px solid gray; border-bottom:1px solid gray;">
+            <li>4 stars categories hotel<br> </li>
+            <li>3 meals + snacks</li>
+            <li>Family Tours</li>
+            <li>Sightseeing as per itinerary with English speaking guide</li>
+        </ul>
+        <h4>+ Entrance fees, visa and permit</h4>
+         <div class="joinNow" id="j3">Contact Now</div>
+        <div class="bottom">$650</div>
+        </div>
+         
+        </div>  <!------- Closing tag of the wrapper --------------->
+</div>    
+<!---------------------------------------------> 
+    
+    
+    
+    
+ <!--------------------------------------------->    
+<div class="container2" style=" background:#333333;; color:aliceblue;">
+    <div class="wrapper">
+    <h1>Hiking Spots </h1><br>    
+        <img class="hiking_img"  src="img/family.jpg">
+        <img class="hiking_img"  src="img/bridge-192982_1280.jpg"> 
+        <img class="hiking_img"  src="img/fatherkid.jpg"> 
+        <img class="hiking_img"  src="img/kid.jpg"> 
+        <img class="hiking_img"  src="img/rough-horn-2146181_1280.jpg"> 
+        <img class="hiking_img"  src="img/sea-3070982_1920.jpg"> 
+        <img class="hiking_img"  src="img/shoes-1638873_1280.jpg"> 
+        <img class="hiking_img"  src="img/sunset-3325080_1280.jpg"> 
+        <img class="hiking_img"  src="img/autumn-2183489_1280.jpg"> 
+        <img class="hiking_img"  src="img/nature-3082832_1280.jpg">
+        <img class="hiking_img"  src="img/bank-192991_1280.jpg"> 
+        <img class="hiking_img"  src="img/mountain-landscape-640617_1280.jpg">
+        </div>  <!------- Closing tag of the wrapper --------------->
+</div>    
+<!---------------------------------------------> 
+    
+  
+    
+ <div style="background: black; text-align: center;  color:aliceblue; padding:15px;">2018 Designed by Nasser Jeary</div>       
+  
+</body>    
+
+</html>
